@@ -1,0 +1,395 @@
+/*! ========= Google Font Add ===========  */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&family=Yeseva+One&display=swap");
+
+:root {
+  /* colors  */
+  --heading-1: #333333;
+  --heading-2: #13103a;
+  --my-mission-p: #424242;
+  --orange: #ffad5a;
+  --deep-orange: #ff5959;
+  --white: #ffffff;
+  --black: #000000;
+  --p-color: #3e3e3e;
+  --section-bg: #ffffff;
+  --mission-bg-1: #edf5f6;
+  --mission-bg-2: #ffeeee;
+  --mission-bg-3: #fff4d5;
+  --footer-text: #d9dbe1e8;
+
+  /* fonts  */
+  --poppins: "Poppins", sans-serif;
+  --yeseva_one: "Yeseva One", cursive;
+  --lobster: "Lobster", cursive;
+  --roboto: "Roboto", sans-serif;
+}
+
+/*! ========= Global Style Part Start ===========  */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--poppins);
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: var(--yeseva_one);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 800;
+  padding-right: 239px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--p-color);
+  font-family: var(--poppins);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -15px;
+}
+
+.col-4 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+.col-5 {
+  width: 41.66%;
+  padding: 0 15px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.col-7 {
+  width: 58.33%;
+  padding: 0 15px;
+}
+
+.offset-1 {
+  margin-right: 8.33%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 0%;
+  height: 0%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.pt-165 {
+  padding-top: 165px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.border-radius {
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.shape-relative {
+  position: relative;
+}
+
+.shape-relative::before {
+  content: "";
+  position: absolute;
+  top: -212px;
+  right: -86px;
+  width: 220px;
+  height: 220px;
+  background: url(../images/shapes/shape-1.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+.shape-relative::after {
+  content: "";
+  position: absolute;
+  top: -107%;
+  left: -13%;
+  width: 166px;
+  height: 166px;
+  background: url(../images/shapes/dot-shape.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+#development-without-limits .container::before {
+  top: 97px;
+  left: -87px;
+}
+#development-without-limits .container::after {
+  top: -28%;
+  right: -15%;
+  left: auto;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--roboto);
+  background-color: var(--deep-orange);
+  color: var(--white);
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 8px;
+  margin: 15px 0 30px;
+  border: 3px solid var(--deep-orange);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--deep-orange);
+}
+
+/* ========= Header Part Start ===========  */
+#header {
+  background-color: var(--heading-2);
+}
+
+.header {
+  padding-top: 10px;
+}
+
+#header .row {
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 28px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu ul li {
+  float: left;
+  margin-right: 24px;
+}
+
+.nav-menu ul li:last-child {
+  margin-right: 1px;
+}
+
+.nav-menu ul li a {
+  display: block;
+  padding: 40px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  color: var(--deep-orange);
+}
+
+.hero-text div.text {
+  text-align: center;
+  padding-top: 178px;
+}
+
+.hero-text div.text h1 {
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.btn-gradient {
+  display: inline-block;
+  background-image: linear-gradient(to left, var(--orange), var(--deep-orange));
+  color: var(--white);
+  padding: 19px 40px;
+}
+
+/* ========= Hero Section Part Start ===========  */
+.hero__text span {
+  color: var(--orange);
+  display: inline-block;
+  margin-top: 10px;
+}
+.hero__text h1:before {
+  content: "";
+  background-color: var(--deep-orange);
+  width: 4px;
+  height: 84%;
+  position: absolute;
+  top: 8%;
+  left: -16px;
+}
+.hero__text h1 {
+  position: relative;
+}
+
+.hero__text h1 {
+  margin-bottom: 30px;
+}
+
+.hero__text p {
+  padding-right: 90px;
+}
+
+.scroll-down {
+  display: block;
+  font-size: 16px;
+  font-family: var(--poppins);
+  color: var(--heading-2);
+}
+
+.hero__img {
+  margin-top: -176px;
+}
+
+/* ========= Mission Part Start ===========  */
+
+.mission .single-box p {
+  color: var(--my-mission-p);
+  font-size: 16px;
+  margin-top: 15px;
+}
+.mission .single-box .img {
+  width: 130px;
+}
+
+.mission .single-box h4 {
+  margin-top: 8px;
+}
+
+.mission h2 span {
+  color: var(--orange);
+}
+
+.mission .single-box {
+  min-height: 379px;
+  padding: 25px;
+  border-radius: 25px;
+}
+.mission .box-1 {
+  background-color: var(--mission-bg-1);
+}
+.mission .box-2 {
+  background-color: var(--mission-bg-2);
+}
+.mission .box-3 {
+  background-color: var(--mission-bg-3);
+}
+
+/* ========= Development Without Limits Part Start ===========  */
+
+.development-without-limits .img {
+  overflow: hidden;
+}
+
+#development-without-limits .text {
+  margin-left: 25px;
+}
+/* ========= Global Community Part Start ===========  */
+
+#global-community h3 {
+  padding-right: 0px;
+}
+
+/* ========= Build Your Application Part Start ===========  */
+
+.build-website span {
+  color: var(--orange);
+}
+
+/* ========= Footer Part Start ===========  */
+
+.footer {
+  color: var(--white);
+  background: var(--black);
+  padding: 60px 0;
+}
+.footer-heading {
+  font-family: var(--lobster);
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+.footer-text {
+  color: var(--footer-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-heading span {
+  color: var(--deep-orange);
+}
